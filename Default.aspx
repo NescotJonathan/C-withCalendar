@@ -21,7 +21,7 @@
                 <asp:BoundField DataField="SecondName" HeaderText="SecondName" SortExpression="SecondName" />
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT Class.Level, Class.Name, Enrolment.DateOfEnrolment, Enrolment.TuitionPaid, Student.FirstName, Student.SecondName FROM Class INNER JOIN Enrolment ON Class.ClassID = Enrolment.ClassID INNER JOIN Student ON Enrolment.StudentID = Student.StudentID"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" SelectCommand="SELECT Classes.Level, Classes.Name, Enrolments.DateOfEnrolment, Enrolments.TuitionPaid, Students.FirstName, Students.SecondName FROM Classes INNER JOIN Enrolments ON Classes.ClassID = Enrolments.ClassID INNER JOIN Students ON Enrolments.StudentID = Students.StudentID"></asp:SqlDataSource>
     </form>
 </body>
 </html>

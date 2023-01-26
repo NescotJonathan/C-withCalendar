@@ -25,7 +25,7 @@
         <asp:Button ID="btnSaveNew" runat="server" Text="Save New Student" OnClick="btnSaveNew_Click" />
         <asp:Button ID="btnSaveEdit" runat="server" Text="Save Edit" OnClick="btnSaveEdit_Click" />
         <asp:Button ID="btnDeleteStudent" runat="server" Text="Delete Student" OnClick="btnDeleteStudent_Click" />
-        <br />
+        <br /><br /><br />
         <asp:GridView ID="grdSelectedStudent" runat="server" AutoGenerateColumns="False" AutoGenerateSelectButton="True" DataKeyNames="StudentID" DataSourceID="SqlDataSourceStudent" OnSelectedIndexChanged="grdSelectedStudent_SelectedIndexChanged">
             <Columns>
                 <asp:BoundField DataField="StudentID" HeaderText="StudentID" InsertVisible="False" ReadOnly="True" SortExpression="StudentID" />
@@ -35,7 +35,7 @@
             </Columns>
             <SelectedRowStyle BackColor="#FFCCFF" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSourceStudent" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [StudentID], [FirstName], [SecondName], [DOB] FROM [Student]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSourceStudent" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" SelectCommand="SELECT [StudentID], [FirstName], [SecondName], [DOB] FROM [Students]"></asp:SqlDataSource>
     </form>
 </body>
 </html>

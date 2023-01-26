@@ -20,7 +20,7 @@ namespace Nescot
 
         protected void grdSelectedStudent_SelectedIndexChanged(object sender, EventArgs e)
         {
-            PhoenixEntities db = new PhoenixEntities();
+            PhoenixEntities1 db = new PhoenixEntities1();
             var students = db.Students.Find(grdSelectedStudent.SelectedValue);
             txtStudentName.Text = students.FirstName;
             txtStudentSecondName.Text = students.SecondName;
@@ -45,7 +45,7 @@ namespace Nescot
 
         protected void btnSaveEdit_Click(object sender, EventArgs e)
         {
-            PhoenixEntities db = new PhoenixEntities();
+            PhoenixEntities1 db = new PhoenixEntities1();
             var students = db.Students.Find(grdSelectedStudent.SelectedValue);
             students.FirstName = txtStudentName.Text;
             students.SecondName = txtStudentSecondName.Text;
@@ -63,7 +63,7 @@ namespace Nescot
 
         protected void btnSaveNew_Click(object sender, EventArgs e)
         {
-            PhoenixEntities db = new PhoenixEntities();
+            PhoenixEntities1 db = new PhoenixEntities1();
             var students = new Student();
             students.FirstName = txtStudentName.Text;
             students.SecondName = txtStudentSecondName.Text;
@@ -83,7 +83,7 @@ namespace Nescot
 
         protected void btnDeleteStudent_Click(object sender, EventArgs e)
         {
-            PhoenixEntities db = new PhoenixEntities();
+            PhoenixEntities1 db = new PhoenixEntities1();
             var students = db.Students.Find(grdSelectedStudent.SelectedValue);
             db.Entry(students).State = System.Data.EntityState.Deleted;
             //db.Entry(students).State = System.Data.Entity.EntityState.Deleted;

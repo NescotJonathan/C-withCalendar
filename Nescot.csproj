@@ -92,15 +92,15 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="ManagementReports.aspx" />
-    <Content Include="NescotEntities.Context.tt">
+    <Content Include="PhoenixEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>NescotEntities.Context.cs</LastGenOutput>
-      <DependentUpon>NescotEntities.edmx</DependentUpon>
+      <DependentUpon>PhoenixEntities.edmx</DependentUpon>
+      <LastGenOutput>PhoenixEntities.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="NescotEntities.tt">
+    <Content Include="PhoenixEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NescotEntities.edmx</DependentUpon>
-      <LastGenOutput>NescotEntities.cs</LastGenOutput>
+      <DependentUpon>PhoenixEntities.edmx</DependentUpon>
+      <LastGenOutput>PhoenixEntities.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -108,12 +108,12 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="NescotEntities.edmx">
+    <EntityDeploy Include="PhoenixEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NescotEntities.Designer.cs</LastGenOutput>
+      <LastGenOutput>PhoenixEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="NescotEntities.edmx.diagram">
-      <DependentUpon>NescotEntities.edmx</DependentUpon>
+    <Content Include="PhoenixEntities.edmx.diagram">
+      <DependentUpon>PhoenixEntities.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.6.3.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.3.js" />
@@ -125,7 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class.cs">
-      <DependentUpon>NescotEntities.tt</DependentUpon>
+      <DependentUpon>PhoenixEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -135,7 +135,7 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Enrolment.cs">
-      <DependentUpon>NescotEntities.tt</DependentUpon>
+      <DependentUpon>PhoenixEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="ManagementReports.aspx.cs">
       <DependentUpon>ManagementReports.aspx</DependentUpon>
@@ -144,20 +144,20 @@
     <Compile Include="ManagementReports.aspx.designer.cs">
       <DependentUpon>ManagementReports.aspx</DependentUpon>
     </Compile>
-    <Compile Include="NescotEntities.Context.cs">
+    <Compile Include="PhoenixEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NescotEntities.Context.tt</DependentUpon>
+      <DependentUpon>PhoenixEntities.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="NescotEntities.cs">
+    <Compile Include="PhoenixEntities.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NescotEntities.tt</DependentUpon>
+      <DependentUpon>PhoenixEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="NescotEntities.Designer.cs">
+    <Compile Include="PhoenixEntities.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NescotEntities.edmx</DependentUpon>
+      <DependentUpon>PhoenixEntities.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.aspx.cs">
@@ -168,7 +168,7 @@
       <DependentUpon>Student.aspx</DependentUpon>
     </Compile>
     <Compile Include="Student.cs">
-      <DependentUpon>NescotEntities.tt</DependentUpon>
+      <DependentUpon>PhoenixEntities.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -207,6 +207,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
